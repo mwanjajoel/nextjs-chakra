@@ -1,24 +1,27 @@
 import Head from 'next/head'
-import { Heading, Link, Text, Code, Flex, Box } from '@chakra-ui/react'
+import { Heading, Link, Text, Code, Flex, Box, Center } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <Box justifyItems="center">
+    <Box>
       <Head>
         <title>NextJS ChakraUI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <Center>
         <Heading as="h1" size="2xl" mb="2">
           Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
         </Heading>
-          
+        </Center>
+        <Center>
           <Text fontSize="xl" mt="2">
             Get started by editing <Code>pages/index.js</Code>
           </Text>
-        
+        </Center>
+        <Center>
         <Flex flexWrap="wrap" alignItems="center" justifyContent="center" maxW="800px" mt="10">
           <Box as="a" href="https://nextjs.org/docs" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis={["auto", "45%"]}>
             <Heading as="h3" size="lg" mb="2"> Documentation &rarr;</Heading>
@@ -41,10 +44,10 @@ export default function Home() {
           </Box>
 
         </Flex>
-
+        </Center>
       </main>
 
-      <Box> 
+      <Box as="footer"> 
         <Text as="a" href="https://mwanjajoel.com">
           Awesomely built by Mwanja Joel
         </Text>
