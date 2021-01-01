@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Heading, Link } from '@chakra-ui/react'
+import { Heading, Link, Text, Code, Flex } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,18 +12,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <Heading as="h1" size="2xl" mb="2">
-          Welcome to Next.js!
+          Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
         </Heading>
           
-
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <Text fontSize="xl" mt="2">
+            Get started by editing <Code>pages/index.js</Code>
+          </Text>
+        
+        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" maxW="800px" mt="10">
+        <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
@@ -50,7 +47,9 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+
+        </Flex>
+
       </main>
 
       <footer className={styles.footer}>
