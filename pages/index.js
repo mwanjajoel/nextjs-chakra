@@ -11,7 +11,7 @@ export default function Home() {
 
       <Box>
         <Center>
-        <Heading as="h1" size="2xl" mb="2">
+        <Heading as="h1" size="2xl" mb="2" mt="4">
           Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
         </Heading>
         </Center>
