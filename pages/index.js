@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { Heading, Link, Text, Code, Flex, Box, Center } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
+import { Heading, Link, Text, Code, Flex, Box, Center, Divider } from '@chakra-ui/react'
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <Box>
         <Center>
         <Heading as="h1" size="2xl" mb="2">
           Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
@@ -45,14 +44,15 @@ export default function Home() {
 
         </Flex>
         </Center>
-      </main>
-
-      <Box as="footer"> 
+      </Box>
+      <Divider mt="40"/>
+      <Center>
+      <Box pt="5"> 
         <Text as="a" href="https://mwanjajoel.com">
           Awesomely built by Mwanja Joel
-        </Text>
-        
+        </Text>  
       </Box>
+      </Center>
     </Box>
   )
 }
