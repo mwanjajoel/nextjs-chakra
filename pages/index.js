@@ -4,13 +4,13 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Box justifyItems="center">
       <Head>
         <title>NextJS ChakraUI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Heading as="h1" size="2xl" mb="2">
           Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
         </Heading>
@@ -44,12 +44,12 @@ export default function Home() {
 
       </main>
 
-      <footer className={styles.footer}>
+      <Box> 
         <Text as="a" href="https://mwanjajoel.com">
           Awesomely built by Mwanja Joel
         </Text>
         
-      </footer>
-    </div>
+      </Box>
+    </Box>
   )
 }
