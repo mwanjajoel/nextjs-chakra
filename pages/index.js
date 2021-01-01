@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Heading, Link, Text, Code, Flex } from '@chakra-ui/react'
+import { Heading, Link, Text, Code, Flex, Box } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -20,6 +20,10 @@ export default function Home() {
           </Text>
         
         <Flex flexWrap="wrap" alignItems="center" justifyContent="center" maxW="800px" mt="10">
+          <Box as="a" href="https://nextjs.org/docs" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis="45%">
+            <Heading as="h3" size="lg" mb="2"> Documentation &rarr;</Heading>
+            <Text fontSize="lg"> Find in-depth information about Next.js features and API</Text>
+          </Box>
         <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
