@@ -44,8 +44,14 @@ export default function Home() {
 
         </Flex>
         </Center>
+        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" maxWidth="1600px" mt="20" >
+          <Box as="a" href="https://a23labs.com" borderWidth="1px" rounded="lg" p="2" m="4" flexBasis={["auto", "45%"]}>
+            <Heading as="h3" size="lg" mb="2">This is another box &rarr;</Heading>
+            <Text fontSize="lg">This is more sample text</Text>
+          </Box>
+        </Flex>
       </Box>
-      <Divider mt="40"/>
+      <Divider mt="30"/>
       <Center>
       <Box pt="5"> 
         <Text as="a" href="https://mwanjajoel.com">
